@@ -11,35 +11,46 @@
 \usepackage{amsmath}
 
 % Please include a clear, concise, and descriptive title
-\title{Your Title Here}
+\title{Software Engineering Essay}
 
 % Please do not change the subtitle
 \subtitle{COMP160 - Software Engineering Essay}
 
 % Please put your student number in the author field
-\author{DO NOT WRITE YOUR NAME\\Put your student number (on your ID card) here}
+\author{1605240}
 
 \begin{document}
 
 \maketitle
 
-\abstract{Please include an abstract of at most 100 words (these do not count towards your word count).}
+\abstract{The issue of porting software has been around for a long time. Game developers face the issue of deciding whether to commit to a specific game engine. In this essay I will look at the problems game developers face with porting game eninges, the benefits or porting and potential solutions for porting. I will find out if game developers should stick to using the same engine or if they should port to different engines.}
 
 \section{Introduction}
 
-Write your introduction here. A brief introduction is recommended, which should outline key details of the chosen topic and the reviewed papers, motivate the work, and provide a roadmap of key points to the reader. The motivation is quite important here, as essays should have a contribution (i.e., what is the point of the essay, and what does the reader take away from the essay) and the link between the motivation (in the introduction) and the contribution (in the conclusion) should be made clear.
+Software engineers "must possess a wide range of skills and talents." \cite{jazayeri2004education} This essay will be reviewing to see whether or not game developer should commit to a specific game engine or toolset when trying to develop games. This all stems from the issue that is software portability. In the field of computing the issue of portability has been around since the late 1950s \cite{garen2007software}. Software can be classed as portable if it has the ability to be used on another system with efficient cost and effort \cite{garen2007software}. The issue of portability is only being made more complex \cite{tanner1996software}. Portability is a huge issue for game developers which can lead to a number of problems. For game developers portability is when you move from one engine to another “without having to redevelop or modify the game to suit that engine” \cite{binsubaih2006architecture}. There are lots of key issues with them trying to port to a different engine which I will look into. However there are benefits of being able to port games too from engine to engine but that comes with a cost. 
 
-\section{Your section title here}
+\section{Issues With Portability}
 
-Write the main body of your essay here. Add more sections if appropriate. You may choose to write about each of your three papers in its own section, or you may choose a different structure. Either way, remember that you are being assessed on technical insight and analysis: it is not enough to merely summarise the contents of the three papers. You must demonstrate the ability to make inferences beyond what is written in the papers, and to draw the three papers together into a single coherent narrative.
+There are many issues with portability especially for game developers. The first of these issues is if developers want to port a game from one engine to another there will be usually be a delay or an extra cost \cite{mooney2004developing} which can lead to them wasting time / money and even losing out on money if it takes them long enough. This is bad as the aim of a company making software is generally to make money as well as make a game people enjoy.  Although if done correctly it means they can get more sales as more people will be able to play their game \cite{mooney2004developing} and research has shown that if implementations are done in multiple environments a program is likely to be more successful and easier to develop and maintain \cite{mooney2004developing}. I believe this to be a good idea as game engines can become old or even discontinued \cite{binsubaih2008game} and if it’s on multiple systems it’d make it easier to continue building it without having to port it.
 
-Your essay must make a clear recommendation, in terms of which of the three techniques you have reviewed is the best according to whichever metric or metrics you feel is most appropriate. You must justify your choice, backing it up with empirical evidence. However remember that an academic essay is not a murder mystery: you should already have briefly discussed your recommendation in the introduction and in other parts of the essay. Do not save it for a grand reveal at the end.
+\section{Benefits of Portability}
+As hardware costs are getting cheaper and software is becoming more expensive to produce \cite{franz1994code_generation} portability brings lots of benefits. Probably the biggest benefit of game developers porting from one engine to another, as is mentioned above, is that if more people can buy the game that’s been developed it leads to lower software costs \cite{mooney2004developing}, which lead to a higher profit margins most of the time. This is great news for them as if they want to they can hire more staff, depending on the success, to help make their game even better. 
+
+Customer loyalty plays a large part in the success of a game \cite{mooney2004developing} so if game developers ported their game it would enable their customers to switch platforms and still be able to play their game. 
+
+
+\section{Potential Solutions}
+Although the majority of game engines will allow you to use assets from another engine \cite{binsubaih2007g}, another pressing issue with several game engines is that when they need to ported it’s a lot more difficult to do so because the logic has to “formatted in their proprietary format” \cite{binsubaih2005game}\cite{binsubaih2006architecture}. This causes problems as the logic is the “core of the game” and where most of the game is stored \cite{binsubaih2005game}.  Although this is still a problem it is also a potential solution as researchers have tried to separate it using “middleware between the logic and game engine” \cite{binsubaih2005game}. This approach has worked for smaller projects as when they compared a game they built through traditional methods and a game they built when the logic was separated and tested for thirty minutes the average FPS drop was 11.69 percent \cite{binsubaih2008game}. If they continue trying to perfect this method and reduce the fps drop for larger games this would be an easy solution for porting games. However, at the current FPS drop this is not suitable for game developers as that would have a major impact on ported games and even the smallest of changes on performance/storage isn’t alright \cite{mooney2004developing}. Although this method would help to make logic more reusuable as you could take it to a game engine of your choosing \cite{binsubaih2005game} this gives game developers more freedom or the engine they could use. 
+
+A solution which sort of links to the other one is "isolating the system-dependent code into as few modules as possible" \cite{stern1978some}, if this was done for game engines and linked to the previous potential solution I said where they separate the logic this could be a solution as most of the code could be ported between engines, apart from a few tiny bits which would remain engine specific. This means they would make it so you could easily be able to transfer code and assets etc, to another engine with little hassle. 
+
+Using a standard interface for every game engine \cite{binsubaih2006architecture} would help game developers develop their games a lot easier on other engines and it would seem as if they hadn't even changed engine. This in turn would lead to less training needed when switching engines but in the beginning a fair bit of training could be required.
 
 \section{Conclusion}
 
-Write your conclusion here. The conclusion should do more than summarise the essay, making clear the contribution of the work and highlighting key points, limitations, and outstanding questions. It should not introduce any new content or information.
+To conclude, from my findings I believe that in the current state of game engines I think game developers should stick to using a single game engine. They should only port games if they have the time and the money to spend porting the game. Also until researchers perfect the method of trying to separate the logic from the game engine is up to scratch, this could play a massive part of how many games get ported and could lead to the success of lots of smaller companies as they could potentially have so many more users exposed to their game. Similarly if all game engines had a standard interface this would help port games as you could easily redo what needed to be done in another engine.
 
-\bibliographystyle{ieeetran}
+\bibliographystyle{IEEEtran}
 \bibliography{references}
 
 \end{document}
